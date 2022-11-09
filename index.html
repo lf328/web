@@ -1,0 +1,144 @@
+<!doctype html>
+
+<html lang="en-us">
+    
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <title>Top 5 Episodes of The Office</title>
+        
+    </head>
+    
+    <body>
+        <br/>
+        <h1>Top 5 Episodes of The Office</h1>
+        <br/>
+        <!--Nav Bar-->
+        <ul>
+            <li><a class="current" href="index.html">Home</a></li>
+            <li><a href="sites/about.html">About Me</a></li>
+            <li><a href="sites/1.html">Episode 1</a></li>
+            <li><a href="sites/2.html">Episode 2</a></li>
+            <li><a href="sites/3.html">Episode 3</a></li>
+            <li><a href="sites/4.html">Episode 4</a></li>
+            <li><a href="sites/5.html">Episode 5</a></li>
+        </ul>
+        <!--First Section-->
+        <div class="main-list">
+            <h1 class="" style="margin-left: 10px; margin-bottom: 30px; margin-right: 1100px; font-size:100%"><u>Top 5</u></h1>
+            <h1 class="slideshow-container" style="margin-left: 650px; margin-top: -68px"><u>Pictures</u></h1>
+            <ol>
+                <li>Dinner Party</li>
+                <li>Diversity Day</li>
+                <li>The Injury</li>
+                <li>Fun Run</li>
+                <li>Goodbye Michael</li>
+            </ol>
+        </div>
+        
+        <hr/>
+            
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="images/maxresdefault.jpg" style="width:100%; height: 100%">
+                <div class="text">Dinner Party</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="images/the-office-diversity-day.jpg" style="width:100%; height: 100%">
+                <div class="text">Diversity Day</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="images/2f285473-b5ac-49e0-8dc6-476902b08519.png" style="width:100%">
+                <div class="text">The Injury</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="images/tv-the_office_us-2005_2013-michael_scott-steve_carell-tshirts-s04e01-fun_run_shirt.jpg" style="width:100%">
+                <div class="text">Fun Run</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="images/heartbreaking4.png" style="width:100%">
+                <div class="text">Goodbye Michael</div>
+            </div>            
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <!--Second Section-->
+        <div class="theme-heading">
+            <h1><u>The Office Opening Theme</u></h1>
+        </div>
+            
+        <div class="video">
+            <iframe src="https://player.vimeo.com/video/166667471" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+        
+        <hr/>
+        
+        <h1><u>Questions</u></h1>
+        
+        <ol class="questions-list">
+            <li>When will it be appropriate to use unordered lists?</li>
+            <ul>
+                <li style="background-color: darkslategray">-It is appropriate to use unordered lists when listing things that dont have an order or things such as making a nav bar.</li>
+            </ul>
+            <br/>
+            <li>When will it be appropriate to use ORDERED lists?</li>
+            <ul>
+                <li style="background-color: darkslategray">-It is appropriate to use ordered lists when listing something you want in a specific order or to have numbers with it.</li>
+            </ul>
+            <br/>
+            <li>What are the different markers (symbols) you can use in unordered lists?</li>
+            <ul>
+                <li style="background-color: darkslategray">-The different markers for unordered lists include circles, discs, squares.</li>
+            </ul>
+            <br/>
+            <li>What are the different markers (symbols) you can use in ORDERED lists?</li>
+            <ul>
+                <li style="background-color: darkslategray">-The different markes for ordered lists are armenian, cjk-ideographic, decimal, decimal-leading-zero, georgian, hebrew, hiragana, hiragana-iroha, katakana, katakana-iroha, lower-alpha, lower-gree k, lower-latin, lower-roman, upper-alpha, upper-latin, upper-roman, none, and inherit.</li>
+            </ul>
+        </ol>
+        
+        <footer>Ⓒ2017 Logan Faris. All rights reserved.</footer>
+
+        
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+        
+        
+    </body>
